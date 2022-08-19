@@ -1,12 +1,10 @@
 import java.util.Scanner;
 
-public class cadastroCliente {
-    calcFaturamento calc = new calcFaturamento();
+  public class cadastroCliente {
     Scanner input = new Scanner(System.in);
     String nomeCliente;
-   double saldoCliente;
+   double saldoCliente = 1;
    double adcSaldo;
-
         void adicionarSaldo() {
             System.out.println("Seu saldo atual é R$" + saldoCliente);
 
