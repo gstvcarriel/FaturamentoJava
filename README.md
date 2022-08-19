@@ -1,5 +1,5 @@
 # FaturamentoJava
-Faturamento simples em Java
+SistemaFaturamento simples em Java
 
 Sistema de faturamento em JAVA
 
