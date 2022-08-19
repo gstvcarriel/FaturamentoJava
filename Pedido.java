@@ -1,11 +1,10 @@
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
-
-public class calcFaturamento {
+public class Pedido extends Cliente {
     Scanner input = new Scanner(System.in);
 
-    cadastroCliente cliente = new cadastroCliente();
+    Cliente cliente = new Cliente();
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
     String nomeProduto, concluir, formaPagamento;
 
@@ -14,7 +13,7 @@ public class calcFaturamento {
     double precoUnItem, vlTotal;
     int qtdItem;
 
-    void realizarPedido() {
+        void realizarPedido() {
         System.out.print("Insira o nome do produto: ");
         nomeProduto = input.next();
 
@@ -50,10 +49,9 @@ public class calcFaturamento {
         if (vlTotal < cliente.saldoCliente || vlTotal == cliente.saldoCliente) {
             verificaSaldo = true;
         } else if (vlTotal > cliente.saldoCliente) {
-            System.out.println("Valor do pedido ultrapassa o saldo em disponível. Compra não permitida.");
+            System.out.println("Valor do pedido ultrapassa o saldo em disponível. Compra não permitida. Saldo disponível R$" + cliente.saldoCliente);
             verificaSaldo = false;
         }
-        System.out.println(cliente.saldoCliente);
 
         if (verificaSaldo = true) {
             System.out.println("Deseja finalizar a compra? Digite 'S' para concluir ou 'N' para cancelar a compra.");
@@ -69,6 +67,7 @@ public class calcFaturamento {
                 System.out.println("Preço unitário: R$ " + precoUnItem);
                 System.out.println("Forma de pagamento: " + formaPagamento.toUpperCase());
                 System.out.println("Valor total: R$" + vlTotal);
+                System.out.println();
 
             } else if (concluir.equalsIgnoreCase("N")) {
                 System.out.println("Compra cancelada.");
