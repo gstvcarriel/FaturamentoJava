@@ -59,6 +59,7 @@ public class Pedido extends Cliente {
 
             if (concluir.equalsIgnoreCase("S")) {
                 System.out.println("Compra concluida com sucesso!");
+                System.out.println();
                 System.out.println("-------------------------------------");
                 System.out.println("    CONFERENCIA DE CONTA");
                 System.out.println("-------------------------------------");
