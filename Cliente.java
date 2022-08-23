@@ -2,15 +2,27 @@ import java.util.Scanner;
   public class Cliente {
     Scanner input = new Scanner(System.in);
     String nomeCliente;
-    double saldoCliente = 0;
+    double saldo;
     double adcSaldo;
-        void adicionarSaldo() {
-            System.out.println("Seu saldo atual é R$" + saldoCliente);
 
+    void setNome () {
+        System.out.println("Digite seu nome: ");
+        nomeCliente = input.next();
+    }
+    public String getNome (){
+        return nomeCliente;
+    }
+    void setSaldoInicial () {
+        System.out.println("Digite o saldo inicial: ");
+        saldo = input.nextDouble();
+    }
+      public double getSaldo (){
+          return saldo;
+      }
+        void adicionarSaldo() {
             System.out.println("Digite a quantidade a ser depositada: ");
              adcSaldo = input.nextDouble();
-             saldoCliente = saldoCliente + adcSaldo;
-
-            System.out.println("Seu saldo atualizado é de R$" + saldoCliente);
+             saldo += adcSaldo;
+            System.out.println("Seu saldo atualizado é de R$" + saldo);
         }
-}
+  }

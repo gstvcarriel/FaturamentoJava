@@ -2,20 +2,21 @@ import java.util.Scanner;
 public class SistemaFaturamento {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         Cliente cliente = new Cliente();
-        Pedido calc = new Pedido();
+        Pedido pedido = new Pedido();
 
-        int menuNav;
+       int menuNav;
 
-        /*Cadastro cliente e saldo*/
-        System.out.println("Por favor, digite o seu nome abaixo: ");
-        cliente.nomeCliente = input.next();
-        System.out.println("Digite seu saldo inicial: ");
-        cliente.saldoCliente = input.nextDouble();
+        /*Cadastro cliente e saldo inicial*/
+         cliente.setNome();
+         cliente.setSaldoInicial();
 
         /*Apresentação + saldo + escolha de ação*/
-        System.out.println("Bem vindo, " + cliente.nomeCliente + "! Seu saldo é de R$ " + cliente.saldoCliente + " reais.");
-        System.out.println("");
+        System.out.println();
+        System.out.println("Bem vindo, " + cliente.getNome() + "! Seu saldo é de R$ " + cliente.getSaldo() + " reais.");
+        System.out.println();
+
         do {
             System.out.println("O que deseja fazer?");
             System.out.println("1 - Realizar pedido");
@@ -24,11 +25,21 @@ public class SistemaFaturamento {
             System.out.println("4 - Sair");
             menuNav = input.nextInt();
             switch (menuNav) {
-                case 1 -> calc.realizarPedido();
-                case 2 -> System.out.println("Seu saldo atual é de R$" + cliente.saldoCliente);
-                case 3 -> cliente.adicionarSaldo();
-                case 4 -> System.out.println("Até breve.");
-                default -> System.out.println("Opção invalida. Digite novamente");
+                case 1 :
+                    pedido.realizarPedido(cliente.getSaldo());
+                    break;
+                case 2 :
+                    System.out.println("Seu saldo atual é de R$" + cliente.getSaldo());
+                    break;
+                case 3 :
+                    cliente.adicionarSaldo();
+                    break;
+                case 4 :
+                        System.out.println("Até breve.");
+                        break;
+                default :
+                    System.out.println("Opção invalida. Digite novamente");
+                    break;
             }
         } while(menuNav != 4);
     }
