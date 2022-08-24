@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26baa1cd-663e-4951-bee6-40ccdce72f97" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Saldo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SistemaFaturamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/SistemaFaturamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FaturamentoJava/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FaturamentoJava/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FaturamentoJava/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FaturamentoJava/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FaturamentoJava/Pedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FaturamentoJava/Pedido.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FaturamentoJava/SistemaFaturamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FaturamentoJava/SistemaFaturamento.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,14 +35,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "File.Encoding"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="SistemaFaturamento" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SistemaFaturamento" />
