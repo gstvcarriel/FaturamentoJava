@@ -19,7 +19,7 @@ public class Pedido {
         System.out.print("Insira o nome do produto: ");
         nomeProduto = input.next();
 
-        System.out.print("Digite o preço unitário do produto '" + nomeProduto + "': ");
+        System.out.print("Digite o preco unitario do produto '" + nomeProduto + "': ");
         precoUnItem = input.nextDouble();
 
         System.out.print("Digite a quantidade do produto '" + nomeProduto + "': ");
@@ -40,7 +40,7 @@ public class Pedido {
         System.out.println("******Resumo da compra******");
         System.out.println("===================");
         System.out.println(" Produto: " + nomeProduto.toUpperCase());
-        System.out.println(" Preço unitário: R$ " + precoUnItem);
+        System.out.println(" Preco unitario: R$ " + precoUnItem);
         System.out.println(" Quantidade: " + qtdItem + "x");
         System.out.println(" Forma de pagamento: " + formaPagamento.toUpperCase());
         System.out.println(" Valor total: R$" + vlTotal);
@@ -67,7 +67,7 @@ public class Pedido {
                 System.out.println("-------------------------------------");
                 System.out.println("Data: " + dtf.format(LocalDateTime.now()));
                 System.out.println("Produtos: " + qtdItem + "x " + nomeProduto.toUpperCase());
-                System.out.println("Preço unitário: R$ " + precoUnItem);
+                System.out.println("PreÃ§o unitÃ¡rio: R$ " + precoUnItem);
                 System.out.println("Forma de pagamento: " + formaPagamento.toUpperCase());
                 System.out.println("Valor total: R$" + vlTotal);
                 System.out.println();
@@ -80,7 +80,7 @@ public class Pedido {
             } else if (concluir.equalsIgnoreCase("N")) {
                 System.out.println("Compra cancelada.");
             } else {
-                System.out.println("Opção invalida.");
+                System.out.println("Opcao invalida.");
             }
         }
     }

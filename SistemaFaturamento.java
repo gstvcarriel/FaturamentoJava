@@ -13,9 +13,9 @@ public class SistemaFaturamento {
          cliente.setNome();
          saldo.setSaldoInicial();
 
-        /*Apresentação + saldo*/
+        /*ApresentaÃ§Ã£o + saldo*/
         System.out.println();
-        System.out.println("Bem vindo, " + cliente.getNome() + "! Seu saldo atual é de R$ " + saldo.getSaldo() + " reais.");
+        System.out.println("Bem vindo, " + cliente.getNome() + "! Seu saldo atual e de R$ " + saldo.getSaldo() + " reais.");
         System.out.println();
         /*Menu*/
         do {
@@ -34,7 +34,7 @@ public class SistemaFaturamento {
                     break;
                 case 2 :
                     saldo.setSaldo(pedido.getSaldoAtual());
-                    System.out.println("Seu saldo atual é de R$" + saldo.getSaldo());
+                    System.out.println("Seu saldo atual e de R$" + saldo.getSaldo());
                     break;
                 case 3 :
                     saldo.adicionarSaldo();
@@ -43,7 +43,7 @@ public class SistemaFaturamento {
                         System.out.println("Ate breve.");
                         break;
                 default :
-                    System.out.println("Opçao invalida. Digite novamente.");
+                    System.out.println("OpÃ§ao invalida. Digite novamente.");
                     break;
             }
         } while(menuNav != 4);
