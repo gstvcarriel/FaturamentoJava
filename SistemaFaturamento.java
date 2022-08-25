@@ -6,6 +6,7 @@ public class SistemaFaturamento {
         Cliente cliente = new Cliente();
         Saldo saldo = new Saldo();
         Pedido pedido = new Pedido();
+        Compra compras = new Compra();
 
        int menuNav; 
 
@@ -19,20 +20,20 @@ public class SistemaFaturamento {
         System.out.println();
         /*Menu*/
         do {
-            System.out.println("+--------------------------+");
-            System.out.println(" |                MENU                |");
-            System.out.println("+--------------------------+");
-            System.out.println(" |    1 - Realizar pedido       |");
-            System.out.println(" |    2 - Adicionar Saldo      |");
-            System.out.println(" |    3 - Consultar Saldo      |");
-            System.out.println(" |    4 - Sair                           |");
-            System.out.println("+--------------------------+");
+            System.out.println("******MENU******");
+            System.out.println("");
+            System.out.println("1 - Compras");
+            System.out.println("2 - Consultar Saldo");
+            System.out.println("3 - Adicionar Saldo");
+            System.out.println("4 - Sair");
             menuNav = input.nextInt();
             switch (menuNav) {
                 case 1 :
-                    pedido.realizarPedido(saldo.getSaldo());
+                    compras.menuCompra(saldo.getSaldo());
+                    //pedido.realizarPedido(saldo.getSaldo());
                     break;
                 case 2 :
+
                     saldo.setSaldo(pedido.getSaldoAtual());
                     System.out.println("Seu saldo atual e de R$" + saldo.getSaldo());
                     break;

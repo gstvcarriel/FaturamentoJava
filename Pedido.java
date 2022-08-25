@@ -13,9 +13,8 @@ public class Pedido {
     int qtdItem;
 
     void realizarPedido(double saldoTotal) {
-        System.out.println("+---------------------------+");
-        System.out.println(" |                PEDIDO                |");
-        System.out.println("+---------------------------+");
+        System.out.println("******NOVO PEDIDO******");
+        System.out.println("");
         System.out.print("Insira o nome do produto: ");
         nomeProduto = input.next();
 
@@ -63,17 +62,17 @@ public class Pedido {
                 System.out.println("Compra concluida com sucesso!");
                 System.out.println();
                 System.out.println("-------------------------------------");
-                System.out.println("    COMPROVANTE");
+                System.out.println("              COMPROVANTE");
                 System.out.println("-------------------------------------");
                 System.out.println("Data: " + dtf.format(LocalDateTime.now()));
                 System.out.println("Produtos: " + qtdItem + "x " + nomeProduto.toUpperCase());
-                System.out.println("Preço unitário: R$ " + precoUnItem);
+                System.out.println("Preço unitario: R$ " + precoUnItem);
                 System.out.println("Forma de pagamento: " + formaPagamento.toUpperCase());
                 System.out.println("Valor total: R$" + vlTotal);
                 System.out.println();
                 System.out.println("Agradecemos a preferencia :)");
                 saldoAtual = saldoTotal - vlTotal;
-                System.out.println("Seu saldo foi atualizado para: R$" + saldoAtual);
+                System.out.println("Seu saldo foi atualizado para: R$" + saldoAtual + " reais.");
 
                 System.out.println();
 
