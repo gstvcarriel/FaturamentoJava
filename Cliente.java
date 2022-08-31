@@ -1,13 +1,11 @@
-import java.util.Scanner;
-  public class Cliente {
-    Scanner input = new Scanner(System.in);
-    String nomeCliente;
+public class Cliente {
 
-    void setNome () {
-        System.out.print("Por favor, digite o seu nome: ");
-        nomeCliente = input.next();
+    private String nome;
+
+    public String getNome() {
+        return nome;
     }
-    public String getNome () {
-        return nomeCliente;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
-  }
+}
